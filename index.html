@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <!-- fontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -51,20 +53,20 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input class="inp-style inp-width" type="number" name="" value="0" id="fClassInput">
                 </div>
                 <div class="plus-minus-btn">
-                    <p>+ -</p>
+                    <p><span id="fClassIncrease" onclick="ticketAmountHandler(true,'fClass')">+</span> <span id="fClassDecrease"onclick="ticketAmountHandler(false,'fClass')">-</span></p>
                 </div>
             </div>
             
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input class="inp-style inp-width" type="number" name="" value="0" id="economyInput">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span>+</span> <span>-</span> </p>
+                    <p> <span id="enonomyIncrease" onclick="ticketAmountHandler(true,'economy')">+</span> <span id="enonomyDecrease" onclick="ticketAmountHandler(false,'economy')">-</span> </p>
                 </div>
             </div>
             <div class="calculations">
@@ -73,7 +75,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$500</p>
+                        <p>$ <span id="subTotal">0</span> </p>
                     </div>
                 </div>
 
@@ -82,7 +84,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p>$ <span id="vat">0</span> </p>
                     </div>
                 </div>
                 <hr>
@@ -91,7 +93,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <p>$ <span id="total">0</span> </p>
                     </div>
                 </div>
             </div>
@@ -102,9 +104,10 @@
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
-    </section>
+    </main>
 
     <!--Thank You-->
+    <script src="script.js"></script>
 </body>
 
 </html>
