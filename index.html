@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <!-- fontAwesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,7 +28,7 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main class="main-content container" id="main-section">
         <div class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
@@ -97,14 +96,22 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style" onclick="bookNowHandler()">Book Now</button>
         </div>
 
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
+
+        
     </main>
+    <div class="success-container" id="success-section">
+        <h1>Success!!</h1>
+        <p>You have successfully purchased your Air Ticket. Thanks for staying with us.</p>
+        <p> <strong>Total amount is: $<span id="success-total"></span> (Including VAT)</strong>  </p>
+        <small>Have a safe journey.</small>
+    </div>
 
     <!--Thank You-->
     <script src="script.js"></script>
