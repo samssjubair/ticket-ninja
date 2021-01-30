@@ -7,7 +7,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background:url("images/bg.png");
+    background:url("../images/bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -109,6 +109,7 @@ nav ul li a:hover, a.active{
     color: #fff;
     font-weight: 500;
     background-color:  #3352F2;
+    cursor: pointer;
 }
 .amount{
     display: flex;
