@@ -33,7 +33,7 @@
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
             </div>
             <div class="input-group">
                 <label for="">Flying To</label>
@@ -52,20 +52,20 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="" value="0" id="fClassInput">
+                    <input min="0" class="inp-style inp-width" type="number" name="" value="0" id="fClassInput">
                 </div>
                 <div class="plus-minus-btn">
-                    <p><span id="fClassIncrease" onclick="ticketAmountHandler(true,'fClass')">+</span> <span id="fClassDecrease"onclick="ticketAmountHandler(false,'fClass')">-</span></p>
+                    <p><span id="fClassIncrease" onclick="ticketAmountHandler(true,'fClass')">+</span> <span id="fClassDecrease"onclick="ticketAmountHandler(false,'fClass')"class="minus-btn">-</span></p>
                 </div>
             </div>
             
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input class="inp-style inp-width" type="number" name="" value="0" id="economyInput">
+                    <input min="0" class="inp-style inp-width" type="number" name="" value="0" id="economyInput">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span id="enonomyIncrease" onclick="ticketAmountHandler(true,'economy')">+</span> <span id="enonomyDecrease" onclick="ticketAmountHandler(false,'economy')">-</span> </p>
+                    <p> <span id="enonomyIncrease" onclick="ticketAmountHandler(true,'economy')">+</span> <span id="enonomyDecrease" class="minus-btn" onclick="ticketAmountHandler(false,'economy')">-</span> </p>
                 </div>
             </div>
             <div class="calculations">
@@ -106,6 +106,9 @@
 
         
     </main>
+
+    <!-- Success container to show success message after booking a ticket  -->
+    
     <div class="success-container" id="success-section">
         <h1>Success!!</h1>
         <p>You have successfully purchased your Air Ticket. Thanks for staying with us.</p>
