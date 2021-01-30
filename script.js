@@ -22,9 +22,7 @@ function subTotalPrice() {
   const economyUnitPrice = 100;
   const fClassAmount = parseInt(document.getElementById("fClassInput").value);
   const economyAmount = parseInt(document.getElementById("economyInput").value);
-  const subTotal =
-    fClassAmount * fClassUnitPrice + economyAmount * economyUnitPrice;
-
+  const subTotal =fClassAmount * fClassUnitPrice + economyAmount * economyUnitPrice;
   return subTotal;
 }
 
